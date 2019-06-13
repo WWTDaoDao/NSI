@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_header"
+        layout="@layout/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Tv_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="对方银行卡号222222222"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/Tv_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:text="开户行"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="付款金额"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/je"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="20000"
+            android:textColor="@color/actionsheet_red"
+            android:textSize="18sp"
+
+            />
+    </LinearLayout>
+<ImageView
+    android:id="@+id/IV_zhifu"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="120dp"
+    android:layout_height="120dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="平台不支持自动扣款，请用您本人的支付宝向以上账号自行转账*转账时请备注订单号"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/postMsg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_corners_light_blue"
+        android:gravity="center"
+        android:text="付款后请点击确认"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_corners_light_yellow"
+        android:gravity="center"
+        android:text="取消订单"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

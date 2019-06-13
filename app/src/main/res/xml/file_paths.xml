@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path path="Android/data/com.nsi.okexsay/" name="files_root" />
+    <external-path path="." name="camera_photos" />
+    <root-path
+        name="root_path" path="." />
+
+    <external-path name="external_files" path="."/>
+    <!--<external-path path="." name="external_storage_root" />-->
+    <resource xmlns:android="http://schemas.android.com/apk/res/android">
+        <external-path path="" name="camera_photos" />
+        <external-path name="images" path="integral/" />
+    </resource>
+</paths>

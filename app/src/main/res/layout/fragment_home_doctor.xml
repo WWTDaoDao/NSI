@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:visibility="gone"
+        android:id="@+id/ll_header"
+        layout="@layout/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.library.PopupView xmlns:att="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/popup_Classification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                att:direction="down"
+                att:dividerHeight="2dp"
+                att:hideSelected="false"
+                att:itemFontSize="18sp"
+                att:itemTextGravity="left"
+                att:listItemHeight="50dp"
+                att:needDivider="false"
+                att:popupTextColor="@color/black"
+                att:rightDrawable="@mipmap/icon_dwon"
+                att:textViewSize="18sp" />
+
+            <com.library.PopupView xmlns:att="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/popup_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                att:direction="down"
+                att:dividerHeight="2dp"
+                att:popupTextColor="@color/black"
+                att:hideSelected="false"
+                att:itemFontSize="18sp"
+                att:itemTextGravity="left"
+                att:listItemHeight="50dp"
+                att:needDivider="false"
+                att:rightDrawable="@mipmap/icon_dwon"
+                att:textViewSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+    <com.google.zxing.view.JDTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tab_indicator_color="#3075EF"
+        app:tab_indicator_height="1.6dp"
+        app:tab_title_selected_bold="true"
+        app:tab_title_selected_color="#3075EF"
+        app:tab_title_size="16sp"
+        app:tab_title_unselected_color="#666666" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#3999" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@mipmap/img_building" />-->
+
+</LinearLayout>

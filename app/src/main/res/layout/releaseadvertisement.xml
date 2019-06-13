@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_header"
+        layout="@layout/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25.5dp"
+                        android:text="交易类型"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+
+                        />
+
+                    <com.library.PopupView xmlns:att="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/popup_transaction"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        att:direction="down"
+                        att:dividerHeight="2dp"
+                        att:hideSelected="false"
+                        att:itemFontSize="18sp"
+                        att:itemTextGravity="left"
+                        att:listItemHeight="50dp"
+                        att:needDivider="false"
+                        att:popupDrawable="@color/white"
+                        att:rightDrawable="@drawable/ic_fold_down"
+                        att:textViewSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25.5dp"
+                        android:text="法币类型"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+
+                        />
+
+                    <com.library.PopupView xmlns:att="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/popup_Classification"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        att:direction="down"
+                        att:dividerHeight="2dp"
+                        att:hideSelected="false"
+                        att:itemFontSize="18sp"
+                        att:itemTextGravity="left"
+                        att:listItemHeight="50dp"
+                        att:needDivider="false"
+                        att:popupDrawable="@null"
+                        att:rightDrawable="@drawable/ic_fold_down"
+                        att:textViewSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25.5dp"
+                        android:text="单位"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+
+                        />
+
+                    <com.library.PopupView xmlns:att="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/popup_Company"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        att:direction="down"
+                        att:dividerHeight="2dp"
+                        att:hideSelected="false"
+                        att:itemFontSize="18sp"
+                        att:itemTextGravity="left"
+                        att:listItemHeight="50dp"
+                        att:needDivider="false"
+                        att:rightDrawable="@drawable/ic_fold_down"
+                        att:textViewSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_right_arrow"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25.5dp"
+                    android:text="价格"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TVPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(CNY)"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:background="@null"
+                    android:id="@+id/ET_Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25.5dp"
+                    android:text="数量"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TV_Company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(USDT)"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:background="@null"
+
+                    android:id="@+id/ET_Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25.5dp"
+                    android:text="最小限额"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TVMinimum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(CNY)"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:background="@null"
+
+                    android:id="@+id/ET_Minimum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25.5dp"
+                    android:text="最大限额"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TVMaximum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="(CNY)"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/TV_Maximum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25.5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="支付方式"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:id="@+id/ll_yinhangka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/IV_yinhangka"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@mipmap/defauflt" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@mipmap/yinhangka" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_weixin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="65dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/IV_weixin"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@mipmap/defauflt" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@mipmap/weixin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/zhifubo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="135dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/IV_zhifubao"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@mipmap/defauflt" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@mipmap/zhifubao" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/postMsg"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="25.5dp"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginRight="25.5dp"
+                android:background="@drawable/shape_corners_light_blue"
+                android:gravity="center"
+                android:text="购买"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

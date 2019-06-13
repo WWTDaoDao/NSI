@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页底部tab字的颜色 -->
+    <color name="color_text_selected">#02a9f4</color>
+    <color name="color_text_normal">#a0a0a0</color>
+    <color name="grey_white_has_alpha">#66FAFAFA</color>
+
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+
+    <color name="common_bg_color">#F7F8FA</color>
+    <color name="text_gery">#404040</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#80000000</color>
+    <color name="color_c1">#c1c1c1</color>
+    <color name="btn_verify_code_color">#7fffcc00</color>
+    <color name="btn_bg_color">#99ffffff</color>
+    <color name="btn_text_color">#7d7d7d</color>
+
+    <color name="text_light_grey">#575757</color>
+    <color name="text_more_light_grey">#6e6e6e</color>
+
+    <color name="btn_blue">#4E88F0</color>
+    <color name="green">#43CD80</color>
+    <color name="greenbibi">#4bd872</color>
+    <color name="redbibi">#ee6560</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+
+    <color name="bg">#F1F1F1</color>
+
+</resources>

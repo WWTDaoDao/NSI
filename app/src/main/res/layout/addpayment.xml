@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_header"
+        layout="@layout/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+
+    <TextView
+        android:id="@+id/add_yinghangka"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="22dp"
+        android:gravity="center_vertical"
+        android:text="银行卡"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3" />
+
+    <TextView
+        android:id="@+id/add_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="22dp"
+        android:gravity="center_vertical"
+        android:text="微信"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3" />
+
+    <TextView
+        android:id="@+id/add_zhifubo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="22dp"
+        android:gravity="center_vertical"
+        android:text="支付宝"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</LinearLayout>

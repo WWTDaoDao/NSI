@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.nsi.okexsay"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        signingConfig signingConfigs.debug
+    }
+    signingConfigs {
+        debug {
+            storeFile file('okex-key.keystore')
+            storePassword 'okex-key'
+            keyAlias 'okex-key-alias'
+            keyPassword 'okex-key'
+        }
+        release {
+            storeFile file('okex-key.keystore')
+            storePassword 'okex-key'
+            keyAlias 'okex-key-alias'
+            keyPassword 'okex-key'
+        }
+    }
+    //增加lint选项，不加的话下面上传到jCenter有可能会报错
+    lintOptions {
+        //abortOnError false
+        abortOnError false
+
+    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+//        }
+//        debug {
+//            signingConfig signingConfigs.debug
+//        }
+//    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+    }
+    dexOptions {
+        preDexLibraries = false
+        additionalParameters = ['--core-library']
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    // 添加下面这句即可
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.facebook.fresco:fresco:0.12.0'
+    implementation 'com.facebook.fresco:animated-gif:0.12.0'
+    // api files('libs/OkHttpFinal-DM-1.0.7-release.jar')
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    // implementation  'com.google.code.gson:gson:2.3.1'
+    implementation 'cn.finalteam:toolsfinal:+'
+    implementation 'com.alibaba:fastjson:1.2.57'
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+    implementation 'pub.devrel:easypermissions:0.4.3'
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.android.support:design:28.0.0'
+    // implementation  'com.github.xiaohaibin:XBanner:1.6.1'
+    implementation 'com.github.wbaizx:PopupView:1.3.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation project(path: ':citypickerview')
+    //implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'//没有使用特殊Header，可以不加这行
+    //  implementation  'com.google.zxing:core:3.3.0'
+}
